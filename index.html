@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Background task demo</title>
+        <link rel="stylesheet" href="./styles.css">
+    </head>
+    <body>
+        <section id="progress-info">
+            <label for="progress-bar">Executing task</label>
+            <progress id="progress-bar" value="0"></progress>
+        </section>
+        <section id="task-status">
+            No tasks available
+        </section>
+        <section id="task-execution-indicator" class="pause">
+        </section>
+        <button id="task-btn">Start task</button>
+        <main id="task-details" aria-describedby="progress-bar" aria-busy="false">
+            
+        </main>
+        <template id="box-template">
+            <div class="box-element">
+                <div class="box-header">
+                    <span class="box-header-text"></span>
+                </div>
+                <div class="box-body">
+                    <span class="box-body-text"></span>
+                </div>
+            </div>
+        </template>
+        <script type="text/javascript" src="./script.js"></script>
+    </body>
+</html>
